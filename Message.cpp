@@ -14,7 +14,7 @@ Message::Message(std::string type, int priority, int sz, char* msg)
 		_priority(priority),
 	    _data(new char[sz + 1])
 {
-	memccpy(_data, msg, sz);
+	memcpy(_data, msg, sz);
 
 }
 

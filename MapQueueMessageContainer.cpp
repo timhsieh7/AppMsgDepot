@@ -4,9 +4,9 @@
 
 MapQueueMessageContainer::MapQueueMessageContainer()
 {
-	_priority_vector.push_back(3);
-	_priority_vector.push_back(2);
 	_priority_vector.push_back(1);
+	_priority_vector.push_back(2);
+	_priority_vector.push_back(3);
 	_priority_map = new std::map<int, std::queue<const Message*>*>();
 }
 
@@ -36,7 +36,7 @@ MapQueueMessageContainer::~MapQueueMessageContainer()
 
 
 
-const Message* MapQueueMessageContainer::getMessageRequest() {
+ const Message* MapQueueMessageContainer::getMessageRequest() {
 
 	const Message* rtMsg = nullptr;
 

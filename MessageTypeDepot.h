@@ -22,9 +22,9 @@ public:
 	MessageTypeDepot(MessageContainer* mc, EventHandler& e );
 	~MessageTypeDepot();
 
-	std::map<std::string, MessageContainer*> *msg_type_map;
+	std::map<std::string, MessageContainer*> *_msg_type_map;
 
-	void getMessage(std::string& msg_type);
+	void getMessageByType(std::string& msg_type);
 
 private:
 	EventHandler _e;

@@ -12,7 +12,7 @@ public:
 	MessageContainer();
 	~MessageContainer();    // base class destructor should be pure virtual 
 
-	virtual const Message* getMessageRequest(std::string msgType) {};
+	virtual const Message* getMessageRequest();
 	virtual void afterMessageDeliverd() {};
 	virtual void adjustMessageContainer() {};
 
